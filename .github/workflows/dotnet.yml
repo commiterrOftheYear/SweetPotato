@@ -18,10 +18,8 @@ jobs:
 
     steps:
     - uses: actions/checkout@v3
-    - name: Setup .NET Core SDK
-      uses: actions/setup-dotnet@v3.0.3
-      with:
-       dotnet-version: 4.6.2
+    - name: Setup latest .NET SDKs
+      uses: Elskom/setup-latest-dotnet@v1.1.2
     - name: Setup .NET
       uses: actions/setup-dotnet@v3
       with:
