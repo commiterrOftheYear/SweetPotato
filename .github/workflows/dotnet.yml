@@ -14,12 +14,10 @@ on:
 jobs:
   build:
 
-    runs-on: windows-latest
+    runs-on: windows-2019
 
     steps:
     - uses: actions/checkout@v3
-    - name: Setup latest .NET SDKs
-      uses: Elskom/setup-latest-dotnet@v1.1.2
     - name: Setup .NET
       uses: actions/setup-dotnet@v3
       with:
